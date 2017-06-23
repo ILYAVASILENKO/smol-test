@@ -1,0 +1,49 @@
+			/*GENERAL BEGIN*/
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+	color: @general-color;
+}
+@font-face{
+	font-family: MyriadProRegular;
+	src:url(../fontes/MyriadProRegular.ttf);
+}
+
+			/*GENERAL BEGIN*/
+@color-green: #49cbcd;
+@general-color: #484c55;
+@feneral-font:15px/1.38 MyriadProRegular, Tahoma, sans-serif;
+
+body{
+	font:@feneral-font;
+	.wrapper{
+		width: 1170px;
+		margin: 0 auto;
+	}
+}
+header{
+	margin-right: 35px;
+	a{
+		float: left;
+		padding: 30px 0;
+	}
+	nav{
+		.nav-items{
+			float: right;
+			display: inline-block;
+			a{
+				padding: 42px 24px;
+			}
+			a:hover {
+				background: url(../img/nav-hover.png) repeat-x 0 0;
+				color: @color-green;
+			}
+		}
+	}
+}
